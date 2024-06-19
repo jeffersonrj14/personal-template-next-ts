@@ -12,9 +12,9 @@ type PagesMetaHeadProps = {
 function PagesMetaHead({
   title = "Ritch Johan Jefferson - Personal Template",
   keywords = "next.js",
-  description = "Ritch Johan Jefferson - Personal Template",
-  template = "%s | Personal Template",
-  icon = "/next.svg",
+  description = "Personal Next Template",
+  template = "%s | Personal Next Template",
+  icon = "/favicon.ico",
 }: PagesMetaHeadProps) {
   const siteUrl = process.env.SITE_URL || "https://jeffersonrj.com";
   const seoTitle = template.replace("%s", title);
@@ -27,7 +27,7 @@ function PagesMetaHead({
           type: "website",
           locale: "en_US",
           url: siteUrl,
-          siteName: "Portfolio",
+          siteName: "Template",
         }}
         twitter={{
           handle: "@jeffersonrj14",
